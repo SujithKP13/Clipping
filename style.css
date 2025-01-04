@@ -59,6 +59,7 @@
 
   .box { 
   border: rgb(0, 0, 0) solid;
+  background-color: wheat;
   width: 300px;
   height: 300px; 
   border-width: 1px; 
