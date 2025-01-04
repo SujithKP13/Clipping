@@ -4,94 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS Clipping Examples</title>
-  <style>
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.5;
-  }
-
-  header {
-    background: #666666;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
-  }
-
-  footer {
-    background: #404040dd;
-    color: rgba(255, 255, 255, 0.522);
-    text-align: center;
-    padding: 20px;
-    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-  }
-
-  main {
-    background: #ffffff;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-  }
-
-  main h2 {
-    width: 100%;
-    font-size: 2rem;
-    text-align: center;
-    color: #0aebd8;
-    margin-bottom: 10px;
-  }
-
-  main h3 {
-    font-size: 1.5rem;
-    color: #000000;
-    text-align: center;
-    text-decoration: underline;
-  }
-
-  .box {
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 1rem;
-    text-align: center;
-  }
-
-  .circle {
-    clip-path: circle(50%);
-    background-image: url('./ClipStyles/1.jpeg');
-  }
-
-  .ellipse {
-    clip-path: ellipse(45% 30%);
-    background-image: url('./ClipStyles/2.jpeg');
-  }
-
-  .polygon {
-    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
-    background-image: url('./ClipStyles/3.jpeg');
-  }
-
-  .inset {
-    clip-path: inset(10px 10px 40px 20px);
-    background-image: url('./ClipStyles/1.jpeg');
-  }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
   <header>
@@ -99,17 +12,44 @@
     <p>Explore various clipping techniques,shapes with CSS</p>
   </header>
 
-  <main>
+  <div class="container">
     <h2>Clipping Shapes</h2>
     <h3>Circle</h3>
-    <div class="box circle">Circle</div>
+    <div class="box">
+      <button class="circle">Click Here</button>
+      <img src="./ClipStyles/1.jpeg" alt="Sample Image">
+    </div>
     <h3>Ellipse</h3>
-    <div class="box ellipse">Ellipse</div>
-    <h3>Polygon</h3>
-    <div class="box polygon">Polygon</div>
+    <div class="box">
+      <button class="ellipse">Click Here</button>
+      <img src="./ClipStyles/2.jpeg" alt="Sample Image">
+    </div>
+    <h3>Triangle</h3>
+    <div class="box">
+      <button class="triangle">Click Here</button>
+      <img src="./ClipStyles/3.jpeg" alt="Sample Image">
+    </div>
+    <h3>Hexagon</h3>
+    <div class="box">
+      <button class="hexagon">Click Here</button>
+      <img src="./ClipStyles/4.jpeg" alt="Sample Image">
+    </div>
+    <h3>Diamond</h3>
+    <div class="box">
+      <button class="diamond">Click Here</button>
+      <img src="./ClipStyles/5.jpeg" alt="Sample Image">
+    </div>
     <h3>Inset</h3>
-    <div class="box inset">Inset</div>
-  </main>
+    <div class="box">
+      <button class="inset">Click Here</button>
+      <img src="./ClipStyles/6.jpeg" alt="Sample Image">
+    </div>
+    <h3>Star</h3>
+    <div class="box">
+      <button class="star">Click Here</button>
+      <img src="./ClipStyles/7.jpeg" alt="Sample Image">
+    </div>
+  </div>
 
   <footer>
     <p>&copy; 2025 Webpage for CSS Clipping Examples &reg;</p>

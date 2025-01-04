@@ -1,0 +1,126 @@
+
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+  }
+
+  header {
+    background: #666666;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+  }
+
+  footer {
+    background: #404040dd;
+    color: rgba(255, 255, 255, 0.522);
+    text-align: center;
+    padding: 20px;
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .container {
+    background: #ffffff;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .container h2 {
+    width: 100%;
+    font-size: 2rem;
+    text-align: center;
+    color: #ff0000e5;
+    margin-bottom: 10px;
+  }
+
+  .container h3 {
+    font-size: 1.5rem;
+    color: #630000;
+    text-align: center;
+    text-decoration: underline;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    transition: clip-path 0.5s;
+  }
+
+  .box { 
+  border: rgb(0, 0, 0) solid;
+  width: 300px;
+  height: 300px; 
+  border-width: 1px; 
+  border-radius: 3px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    background-color:rgba(72, 73, 73, 0.919);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  button:hover {
+    background-color: rgb(2, 0, 139);
+  }
+  
+  button.circle:active + img {
+    clip-path: circle(40% at 50% 50%);
+  }
+  
+  button.triangle:active + img {
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+  
+  button.ellipse:active + img {
+    clip-path: ellipse(50% 30% at 50% 50%);
+  }
+  
+  button.hexagon:active + img {
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  }
+  
+  button.diamond:active + img {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  }
+  button.star:active + img  {
+      clip-path: polygon(
+        50% 0%, 
+        61% 35%, 
+        98% 35%, 
+        68% 57%, 
+        79% 91%, 
+        50% 70%, 
+        21% 91%, 
+        32% 57%, 
+        2% 35%, 
+        39% 35%
+      );
+  }
+
+  button.inset:active + img {
+    clip-path: inset(10px 10px 40px 20px);
+  }
